@@ -182,10 +182,7 @@ img.desno {
     float: right;
     padding: 8px 6px 0px 10px;
     opacity: 1;
-}
 
-img.desno:hover {
-    opacity: 0.5;
 }
 
 img.levo {
@@ -193,6 +190,9 @@ img.levo {
     padding: 8px 10px 0px 6px;
 }
 
+a:hover img.desno {
+    opacity: 0.5;
+}
 a:hover img.levo {
     opacity: 0.5;
 }
