@@ -184,10 +184,17 @@ img.desno {
     opacity: 1;
 }
 
+img.desno:hover {
+    opacity: 0.5;
+}
+
 img.levo {
     float: left;
     padding: 8px 10px 0px 6px;
-    opacity: 1;
+}
+
+a:hover img.levo {
+    opacity: 0.5;
 }
 
  div.sidebar {
