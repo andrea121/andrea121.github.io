@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	width: 1000px;
+	margin: auto;
+	font-weight: 700;
+	text-indent: 10px;
+	font-family: 'Comfortaa', cursive; 
+}
+
+header {
+	margin: 0;
+	width: 1000px;
+    height: 150px;
+	background-color: #F8F8F8;
+	position: sticky;
+	top: 0;
+}
+
+p.header {
+    display: inline;
+    margin: 50px 10px;
+    padding-top: 50px;
+}
+
+h1 {
+    color: #b30000;
+    opacity: 0.8;
+    font-size: 2.3em;
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 0.6);
+}
+
+span.naslov {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+img.grb {
+    width: auto;
+    height: 150px;
+    float: left;
+    margin-right: 10px;
+}
+
+nav {
+	width: 1000px;
+	background-color: #b30000;
+	position: sticky;
+	top: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+ nav ul {
+    float: left;
+    background-color: #b30000;
+    width: 1000px;
+ }
+
+button {
+    background-color: #b30000;
+    color: white;
+    border: none;
+    width: 237px;
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0;
+    font-weight: 700;
+
+}
+ nav ul li {
+    float: left;
+    list-style-type: none;
+    position: relative;
+
+ }
+ 
+ nav ul li:hover button {
+    background-color: white;
+    color: black;
+    font-weight: 700;
+ }
+
+ nav ul li a {
+    display: block;
+    background-color: #b30000;
+    text-decoration: none;
+    color: white;
+ }
+
+ nav ul li ul {
+    display: none;
+    position: absolute;
+    width: 237px;
+    background-color: white;
+    margin-top: 0; 
+    right: 1px;
+    max-height: 400px;
+    margin-bottom: 80px;
+    
+ }
+
+ nav ul li ul li {
+    border-left: 3px solid #b30000;
+    padding: 5px;
+    border-bottom: 1px solid #f3f3f3;
+ }
+
+ nav ul li ul li:hover a {
+    background-color: #b30000;
+    color: white;
+ }
+
+ nav ul li ul li:hover {
+    border-left: 3px solid white;
+    background-color: #b30000;
+    color: white;
+    width: 225px;
+ }
+
+ nav ul li ul a {
+    background-color: white;
+    color: #b30000;
+ }
+ 
+
+ nav ul li:hover ul {
+    display: block;
+    z-index: 1000;
+ }
+
+ div.main {
+ 	margin: 0;
+ 	width: 1000px;
+    font-family: "Arimo";
+    font-size: .95em;
+    font-weight: 400;
+ 	 }
+
+
+ div.content {
+ 	margin: 0;
+ 	width: 794px;
+ 	float: left;
+ 	background-color: #F8F8F8;
+    border-right: 6px solid white;
+    text-align: justify;
+    text-indent: 0;
+ }
+
+ h2.glnaslov {
+    text-align: center;
+    padding: 10px;
+    color: #4d4d4d;
+    font-style: oblique;
+ }
+
+ div.content div {
+    padding: 7px;
+ }
+
+div#uvod {
+    font-weight: 600;
+    color: #4d4d4d;
+    padding: 10px 20px;
+} 
+
+div h4 {
+    color: #4d4d4d;
+    padding: 5px;
+}
+
+div.sadrzaj p {
+    color: #4d4d4d;
+    padding: 5px;
+}
+
+img.desno {
+    float: right;
+    padding: 8px 6px 0px 10px;
+}
+
+img.levo {
+    float: left;
+    padding: 8px 10px 0px 6px;
+}
+
+#krajnjip {
+    
+}
+
+ div.sidebar {
+ 	margin: 0;
+    float: right;
+    width: 200px;
+    background-color: #F8F8F8;
+    color: black;
+    height: 100%;
+    
+ }
+
+ div.sidebar h3 {
+    padding: 10px;
+    color: #4d4d4d;
+    text-align: left; 
+ }
+
+ div.vesti {
+    margin: 10px auto;
+ }
+ 
+ div.vesti1 {
+    margin: 10px auto;
+ }
+ div.vesti a {
+    padding: 0px 23px;
+    text-decoration: none;
+    color: red;
+    font-style: italic;
+    line-height: 1.5em;
+ }
+
+ div.vesti1 a {
+    padding: 0px 23px;
+    text-decoration: none;
+    color: red;
+    font-style: italic;
+    line-height: 1.5em;
+}
+
+div.vesti1 h4 {
+    font-weight: 400;
+}
+ 
+ div.dmreze {
+    margin: 10px auto;
+ }
+
+ img#fb {
+    margin-bottom: 5px;
+    margin-left: 53px;
+ }
+
+ img#fb1 {
+    margin-bottom: 5px;
+    margin-left: 35px;
+ }
+
+ footer {
+ 	margin: 0;
+    position: fixed;
+    z-index: 1;
+ 	height: 80px;
+ 	width: 1000px;
+ 	background-color: #b30000;
+ 	clear: both;
+ 	position: sticky;
+ 	bottom: 0;
+    z-index: 50;
+ }
+
+ div.footeradd {
+ 	font-size: 0.75em;
+ 	display: inline-block;
+ }
+
+ address {
+ 	font-style: normal;
+    color: white;
+ }
+
+ #pionir {
+ 	float: right;
+ 	padding-right: 70px;
+ 	padding-top: 10px;
+ 	text-align: center;
+ }
+
+ #marakana {
+ 	padding-left: 70px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+ .kupikartebtt {
+ 	background-color: #b30000;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    width: 150px;
+    margin: 0;
+
+ }
+
+ p {
+ 	margin: 0;
+ }
