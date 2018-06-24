@@ -50,7 +50,7 @@ nav {
 	background-color: #b30000;
 	position: sticky;
 	top: 150px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,1,0.2);
 }
  nav ul {
     float: left;
@@ -181,15 +181,13 @@ div.sadrzaj p {
 img.desno {
     float: right;
     padding: 8px 6px 0px 10px;
+    opacity: 1;
 }
 
 img.levo {
     float: left;
     padding: 8px 10px 0px 6px;
-}
-
-#krajnjip {
-    
+    opacity: 1;
 }
 
  div.sidebar {
@@ -198,8 +196,6 @@ img.levo {
     width: 200px;
     background-color: #F8F8F8;
     color: black;
-    height: 100%;
-    
  }
 
  div.sidebar h3 {
