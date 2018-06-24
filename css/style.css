@@ -16,6 +16,7 @@ header {
 	width: 1000px;
     height: 150px;
 	background-color: #F8F8F8;
+    background: linear-gradient(to right, #F8F8F8, #F8F8F8, #b30000);
 	position: sticky;
 	top: 0;
 }
@@ -138,6 +139,7 @@ button {
     font-family: "Arimo";
     font-size: .95em;
     font-weight: 400;
+    overflow: hidden;
  	 }
 
 
@@ -182,7 +184,6 @@ img.desno {
     float: right;
     padding: 8px 6px 0px 10px;
     opacity: 1;
-
 }
 
 img.levo {
@@ -203,6 +204,7 @@ a:hover img.levo {
     width: 200px;
     background-color: #F8F8F8;
     color: black;
+    box-shadow: 10px 10px 5px grey;
  }
 
  div.sidebar h3 {
