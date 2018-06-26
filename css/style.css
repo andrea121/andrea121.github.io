@@ -19,6 +19,7 @@ header {
     background: linear-gradient(to right, #F8F8F8, #F8F8F8, #b30000);
 	position: sticky;
 	top: 0;
+    z-index: 1000;
 }
 
 p.header {
@@ -52,6 +53,7 @@ nav {
 	position: sticky;
 	top: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,1,0.2);
+    z-index: 1000;
 }
  nav ul {
     float: left;
