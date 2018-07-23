@@ -1,23 +1,26 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-	width: 1000px;
+    width: 100%;
 	margin: auto;
 	font-weight: 700;
 	text-indent: 10px;
 	font-family: 'Comfortaa', cursive; 
+    display:flex;
+    flex-direction: column;
 }
 
 header {
 	margin: 0;
-	width: 1000px;
+	width: 100%;
     height: 150px;
 	background-color: #F8F8F8;
     background: linear-gradient(to right, #F8F8F8, #F8F8F8, #b30000);
-	position: sticky;
+	position: static;
 	top: 0;
     z-index: 1000;
 }
@@ -31,7 +34,7 @@ p.header {
 h1 {
     color: #b30000;
     opacity: 0.8;
-    font-size: 2.3em;
+    font-size: 5vw;
     text-shadow: 4px 4px 2px rgba(150, 150, 150, 0.6);
 }
 
@@ -48,9 +51,9 @@ img.grb {
 }
 
 nav {
-	width: 1000px;
+	width: 100%;
 	background-color: #b30000;
-	position: sticky;
+	position: static;
 	top: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,1,0.2);
     z-index: 1000;
@@ -58,7 +61,7 @@ nav {
  nav ul {
     float: left;
     background-color: #b30000;
-    width: 1000px;
+    width: 100%;
  }
 
 button {
@@ -78,6 +81,9 @@ button {
     float: left;
     list-style-type: none;
     position: relative;
+    float: none;
+    width: 100%;
+    text-align: center;
 
  }
  
@@ -97,7 +103,7 @@ button {
  nav ul li ul {
     display: none;
     position: absolute;
-    width: 237px;
+    width: 100%;
     background-color: white;
     margin-top: 0; 
     right: 1px;
@@ -115,39 +121,41 @@ button {
  nav ul li ul li:hover a {
     background-color: #b30000;
     color: white;
+
  }
 
  nav ul li ul li:hover {
     border-left: 3px solid white;
     background-color: #b30000;
     color: white;
-    width: 225px;
+    width: 100%;
  }
 
  nav ul li ul a {
     background-color: white;
     color: #b30000;
  }
- 
 
  nav ul li:hover ul {
     display: block;
     z-index: 1000;
  }
 
- div.main {
+ main {
  	margin: 0;
- 	width: 1000px;
+ 	width: 100%;
     font-family: "Arimo";
     font-size: .95em;
     font-weight: 400;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
  	 }
 
-
- div.content {
+ section {
  	margin: 0;
- 	width: 794px;
+ 	width: 100%;
  	float: left;
  	background-color: #F8F8F8;
     border-right: 6px solid white;
@@ -162,22 +170,22 @@ button {
     font-style: oblique;
  }
 
- div.content div {
+ section article {
     padding: 7px;
  }
 
-div#uvod {
+#uvod {
     font-weight: 600;
     color: #4d4d4d;
     padding: 10px 20px;
 } 
 
-div h4 {
+article h4 {
     color: #4d4d4d;
     padding: 5px;
 }
 
-div.sadrzaj p {
+article.sadrzaj p {
     color: #4d4d4d;
     padding: 5px;
 }
@@ -186,10 +194,12 @@ img.desno {
     float: right;
     padding: 8px 6px 0px 10px;
     opacity: 1;
+    flex-wrap: wrap;
 }
 
 img.levo {
     float: left;
+    flex-wrap: wrap;
     padding: 8px 10px 0px 6px;
 }
 
@@ -200,29 +210,43 @@ a:hover img.levo {
     opacity: 0.5;
 }
 
- div.sidebar {
+aside {
  	margin: 0;
     float: right;
-    width: 200px;
+    width: 100%;
+    height: 100%;
+    /* margin-bottom: 100px; */
     background-color: #F8F8F8;
     color: black;
     box-shadow: 10px 10px 5px grey;
+    flex: 0 0 200px;
+    text-align: center;
  }
 
- div.sidebar h3 {
+aside h5 {
+    font-weight: 400;
+}
+
+aside h3 {
     padding: 10px;
     color: #4d4d4d;
-    text-align: left; 
+    text-align: center; 
  }
 
- div.vesti {
+.svnaslov {
+    padding: 5px;
+    color: #4d4d4d;
+    text-align: left;
+ }
+
+article.vesti {
     margin: 10px auto;
  }
  
- div.vesti1 {
+article.vesti1 {
     margin: 10px auto;
  }
- div.vesti a {
+article.vesti a {
     padding: 0px 23px;
     text-decoration: none;
     color: red;
@@ -230,7 +254,7 @@ a:hover img.levo {
     line-height: 1.5em;
  }
 
- div.vesti1 a {
+article.vesti1 a {
     padding: 0px 23px;
     text-decoration: none;
     color: red;
@@ -238,61 +262,63 @@ a:hover img.levo {
     line-height: 1.5em;
 }
 
-div.vesti1 h4 {
+article.vesti1 h4 {
     font-weight: 400;
 }
  
- div.dmreze {
+article.dmreze {
     margin: 10px auto;
  }
 
- img#fb {
+img#fb {
     margin-bottom: 5px;
-    margin-left: 53px;
+    margin-left: 18px;
  }
 
- img#fb1 {
+img#fb1 {
     margin-bottom: 5px;
-    margin-left: 35px;
+    margin-left: 20px;
  }
 
- footer {
+footer {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
  	margin: 0;
-    position: fixed;
+    position: static;
     z-index: 1;
- 	height: 80px;
- 	width: 1000px;
+ 	height: auto; 
+ 	width: 100%;
  	background-color: #b30000;
  	clear: both;
- 	position: sticky;
  	bottom: 0;
-    z-index: 50;
+    z-index: 100;
  }
 
- div.footeradd {
+article.footeradd {
  	font-size: 0.75em;
  	display: inline-block;
  }
 
- address {
+address {
  	font-style: normal;
     color: white;
  }
 
- #pionir {
+#pionir {
  	float: right;
- 	padding-right: 70px;
+ 	/*padding-right: 70px;*/ /*novo*/
  	padding-top: 10px;
  	text-align: center;
  }
 
- #marakana {
- 	padding-left: 70px;
+#marakana {
+ 	/*padding-left: 70px;*/ /*novo*/
     padding-top: 10px;
     text-align: center;
 }
 
- .kupikartebtt {
+.kupikartebtt {
  	background-color: #b30000;
     border: none;
     color: white;
@@ -308,3 +334,61 @@ div.vesti1 h4 {
  p {
  	margin: 0;
  }
+
+
+
+@media only screen and (min-width: 600px) {
+    body {
+        width: 1000px; 
+    }
+    header {
+        position: sticky;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    nav {
+        position: sticky;
+    }
+    main {
+        flex-direction: row;
+        margin-bottom: 100px; 
+    }
+    nav ul li {
+       float: left;
+       display: block;
+       text-align: left;
+       width: 25%;
+       position: relative;
+    }
+    nav ul li ul {
+        width: 95%;
+    }
+    nav ul li ul li {
+        width: 90%;
+        float: right;
+        margin-left: 0;
+    }
+    nav ul li ul li a {
+        width: 90%;
+        float: right;
+    }
+    nav ul li ul li a button {
+        width: 90%; 
+    }
+    nav ul li ul li:hover {
+        width: 90%;
+        margin-left: 0;
+    }
+    footer {
+        width: 1000px; 
+        position: sticky;
+        flex-direction: row;
+    }
+    #marakana {
+        margin-left: 70px; 
+    }
+    #pionir {
+        margin-right: 70px;
+    }
+}
