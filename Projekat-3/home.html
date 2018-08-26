@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa|Libre+Franklin|Montserrat|Raleway">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body onload="checkLogin(), loadData()">
+        <section class="container">
+            <header>
+                <section class="logo">
+                    Facebook
+                </section>
+                <nav id="navbar">
+                    <a href="home.html">Home</a>
+                </nav>
+            </header>
+        </section>
+        <main class="content">
+            <article id="errors"></article>
+            <article id="success"></article>
+            <aside class="left-sidebar">
+                <section id="user-image"></section>
+                <section id="username"></section>
+                <section class="change-profile-image">
+                    <input type="file" id="profile-image" />
+                    <button id="change-img-btn">Change Profile Image</button>
+                </section>
+            </aside>
+            <section class="main-content">
+                <section class="new-feed">
+                    <article class="add-feed">
+                        <input type="text" id="status" placeholder="Write something..." maxlength="140" required/>
+                        <button id="add-status-btn">Share</button>
+                    </article>
+                    <article class="add-image">
+                        <input type="file" id="image" class="image-input" />
+                        <input type="checkbox" id="private"><label for="private">Private</label>
+                        <button id="add-img-btn">Add Image</button>
+                    </article>
+                </section>
+                <section id="feed-list"></section>
+            </section>
+        </main>
+    </body>
+    <script src="js/declare.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/main.js"></script>
+</html>

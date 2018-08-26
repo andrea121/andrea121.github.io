@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa|Libre+Franklin|Montserrat|Raleway">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body onload="checkLogin(), loadImageData()">
+        <section class="container">
+            <header>
+                <section class="logo">
+                    Facebook
+                </section>
+                <nav id="navbar">
+                    <a href="home.html">Home</a>
+                </nav>
+            </header>
+        </section>
+        <main class="content">
+            <article id="errors"></article>
+            <article id="success"></article>
+            <aside class="left-sidebar" id="image-container">
+                <section id="image"></section>
+            </aside>
+            <section class="main-content" id="image-comments-container">
+                <section class="image-meta">
+                    <article id="author-image"></article>
+                    <article id="author-name"></article>
+                </section>
+                <section id="comments"></section>
+                <section class="add-comment">
+                	<input type="text" id="new-comment" placeholder="Insert comment" />
+                	<button id="add-comm-btn">Add Comment</button>
+                </section>
+            </section>
+        </main>
+    </body>
+    <script src="js/declare.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/image.js"></script>
+</html>

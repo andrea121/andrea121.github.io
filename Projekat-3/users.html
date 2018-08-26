@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User's profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa|Libre+Franklin|Montserrat|Raleway">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body onload="checkLogin(), loadUserData()">
+        <section class="container">
+            <header>
+                <section class="logo">
+                    Facebook
+                </section>
+                <nav id="navbar">
+                    <a href="home.html">Home</a>
+                </nav>
+            </header>
+        </section>
+        <main class="content">
+            <aside class="left-sidebar">
+                <section id="user-image"></section>
+                <section id="username"></section>
+            </aside>
+            <section class="main-content">                
+                <section id="feed-list"></section>
+            </section>
+        </main>
+    </body>
+    <script src="js/declare.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/user.js"></script>
+</html>
